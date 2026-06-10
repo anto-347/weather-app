@@ -2,12 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weather-app</title>
+    <title>Weather</title>
+    <script src="src/main.ts" type="module" defer></script>
+    <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <nav>
+      <div id="select">
+        <div id="fr">
+          <img src="src/assets/fr.svg" alt="" class="img-nav" /> Français
+        </div>
+        <div id="en">
+          <img src="src/assets/en.svg" alt="" class="img-nav" /> English
+        </div>
+      </div>
+      <div id="github">
+        <a href="https://github.com/anto-347/weather-app" target="_blank"
+          ><img src="src/assets/github.svg" alt="" class="img-nav"
+        /></a>
+      </div>
+    </nav>
+    <main>
+      <h1 id="main-title">Welcome on Weather App !</h1>
+      <h3 id="subheading1">Enter the location below.</h3>
+      <form action="">
+        <input type="text" placeholder="Paris" required id="ipt-location" />
+        <button type="submit" id="btn-submit">Check the weather there</button>
+      </form>
+    </main>
   </body>
 </html>
