@@ -4,19 +4,22 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: #f0ebe3;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #fdffd6;
+
+  /* https://grabient.com/AwGgdAjAbA7CFgExQiUYCsBmK8xYlTGAE45JgtwJgAWNcGU8KRCIA?angle=180 */
+
   background: linear-gradient(
-    135deg,
-    rgba(253, 255, 214, 1) 0%,
-    rgba(94, 209, 255, 1) 5%,
-    rgba(48, 172, 255, 1) 67%,
-    rgba(48, 127, 255, 1) 99%
+    180deg,
+    #00084f 0%,
+    #001e78 25%,
+    #0034a6 50%,
+    #0049d8 75%,
+    #005eff 100%
   );
-  background-repeat: no-repeat;
   height: 100vh;
 }
 
