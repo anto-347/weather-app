@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <script src="src/main.ts" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/b2911a96f0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
     <nav>
       <div id="select">
-        <div id="fr">
-          <img src="src/assets/fr.svg" alt="" class="img-nav" /> Français
+        <div id="globe" class="globe">
+          <i class="fa-solid fa-globe"></i>
         </div>
-        <div id="en">
-          <img src="src/assets/en.svg" alt="" class="img-nav" /> English
+        <div>
+          <div id="fr" class="lang fr">
+            <img src="src/assets/fr.svg" alt="" class="img-nav-25" /> Français
+          </div>
+          <div id="en" class="lang en">
+            <img src="src/assets/en.svg" alt="" class="img-nav-25" /> English
+          </div>
         </div>
       </div>
+      <h1 id="nav-title">WEATHER</h1>
       <div id="github">
         <a href="https://github.com/anto-347/weather-app" target="_blank"
-          ><img src="src/assets/github.svg" alt="" class="img-nav"
-        /></a>
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </div>
     </nav>
     <main>

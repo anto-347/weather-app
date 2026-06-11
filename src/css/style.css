@@ -4,25 +4,115 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: #f0ebe3;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-
-  /* https://grabient.com/AwGgdAjAbA7CFgExQiUYCsBmK8xYlTGAE45JgtwJgAWNcGU8KRCIA?angle=180 */
-
   background: linear-gradient(
-    180deg,
-    #00084f 0%,
-    #001e78 25%,
-    #0034a6 50%,
-    #0049d8 75%,
-    #005eff 100%
+    45deg,
+    #0e0a23 0%,
+    #0e0a23 7.692%,
+    #141030 calc(7.692% + 1px),
+    #141030 15.385%,
+    #1b173c calc(15.385% + 1px),
+    #1b173c 23.077%,
+    #231e48 calc(23.077% + 1px),
+    #231e48 30.769%,
+    #2c2654 calc(30.769% + 1px),
+    #2c2654 38.462%,
+    #352f60 calc(38.462% + 1px),
+    #352f60 46.154%,
+    #3f386b calc(46.154% + 1px),
+    #3f386b 53.846%,
+    #494276 calc(53.846% + 1px),
+    #494276 61.538%,
+    #534c81 calc(61.538% + 1px),
+    #534c81 69.231%,
+    #5c568c calc(69.231% + 1px),
+    #5c568c 76.923%,
+    #665f96 calc(76.923% + 1px),
+    #665f96 84.615%,
+    #6f68a0 calc(84.615% + 1px),
+    #6f68a0 92.308%,
+    #7771a9 calc(92.308% + 1px) 100%
   );
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 8px;
+
+  --main: #2c2654;
+  --second: #534c81;
+  --third: #7771a9;
+  --font: #d9dcfc;
 }
 
-.img-nav {
+/* Nav */
+nav {
+  grid-column: span 6 / span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 30px 30px 0 30px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#select {
+  display: flex;
+}
+
+.lang {
+  background-color: var(--third);
+  padding: 3px;
+  margin-left: 8px;
+}
+
+.selected {
+  background-color: var(--second);
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-brands,
+.fa-solid {
+  cursor: pointer;
+  color: var(--font);
+}
+
+#globe:hover,
+#github:hover {
+  transform: scale(1.2);
+  transition: 300ms ease-out;
+}
+
+/* .globe.deploy {
+
+} */
+
+/* Main */
+main {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+/* Other stuff */
+.img-nav-25 {
   width: 25px;
+}
+
+.img-nav-30 {
+  width: 30px;
 }
